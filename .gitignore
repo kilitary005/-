@@ -1,0 +1,13 @@
+# 忽略你的超大CSV文件
+SFT/MME-CoT.csv
+SFT/circular_output_260202.csv
+SFT/atel_output_260202.csv
+
+# 忽略模型checkpoint文件夹（必加，否则还会报错）
+SFT/outputs/checkpoint-*/
+
+
+.env 
+.env.* 
+*/.env 
+apikey* 

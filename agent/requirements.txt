@@ -1,0 +1,14 @@
+import os
+
+# List of required packages for the project
+requirements = [
+    "psycopg2-binary",  # PostgreSQL database adapter for Python
+    "pandas",           # Data manipulation and analysis library
+    "google-adk",       # Google ADK library for agent development
+    "zoneinfo"          # Time zone support for Python
+]
+
+# Write the requirements to the requirements.txt file
+with open(os.path.join("adk-agent-tools", "requirements.txt"), "w") as f:
+    for requirement in requirements:
+        f.write(f"{requirement}\n")
